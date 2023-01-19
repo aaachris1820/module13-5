@@ -10,3 +10,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* header style */
+
+.header-1 {
+    background: linear-gradient(to right, rgb(64, 0, 255), rgb(225, 0, 255));
+}
+
+.header-2 {
+    background: linear-gradient(to right, rgb(64, 0, 255), rgb(225, 0, 255));
+}
+
+.bg-card {
+    background-color: rgb(232, 232, 232)!important;
+}
