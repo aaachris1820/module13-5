@@ -15,13 +15,13 @@
     <header>
         <!-- navbar section -->
         <nav class="navbar py-3 my-3 navbar-expand-lg bg-light">
-            <div class="container w-75">
+            <div class="container-sm ">
               <a class="navbar-brand fw-bold" href="#">Abacus Convention Center</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav fw-semibold ms-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav fw-semibold ms-sm-auto mb-2 mb-lg-0">
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="#">Home</a>
                   </li>
@@ -88,18 +88,32 @@
 
     <main>
 
-        <section class="container mb-100 every-moment">
-
-            <div class="row">
-                <div class="col-12 col-md-6">
-                    <img src="images/wedding.png"  alt="" class="w-100">
-                </div>
-                <div class="col-12 col-md-6 my-auto">
-                    <h1 class="fw-semibold">Every moment is Precious</h1>
-                    <p>No matter it is an ordinary day or a very bad day, all of these moments define who we are as a person. These moments define us, so we take each of them with the utmost care possible</p>
-                    <button class="btn btn-primary btn-large">Explore our album <img class="fw-bold" src="icons/arrow-right.svg" alt=""></button>
-                </div>
+        <section class="mb-100 every-moment">
+          
+          <!-- toast -->
+          <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex toast-border">
+              <div class="toast-body">
+                <img src="icons/gift.svg" alt="gift icon">
+                20% off on next booking
+              </div>
+              <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
+          </div>
+          
+          <div class="container">
+            <div class="row gy-5">
+              <div class="col-12 col-md-6 order-1 order-md-0">
+                  <img src="images/wedding.png"  alt="" class="w-100">
+              </div>
+              <div class="col-12 col-md-6 my-auto order-0 order-md-1">
+                  <h1 class="fw-semibold">Every moment is Precious</h1>
+                  <p>No matter it is an ordinary day or a very bad day, all of these moments define who we are as a person. These moments define us, so we take each of them with the utmost care possible</p>
+                  <button class="btn btn-primary px-4 py-3 btn-large">Explore our album <img class="fw-bold" src="icons/arrow-right.svg" alt=""></button>
+              </div>
+          </div>
+          </div>
+            
         </section>
 
         <!-- package section -->
@@ -228,6 +242,19 @@
                           </div>
                           
                         </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                              Accordion Item #4
+                            </button>
+                          </h2>
+                          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                          </div>
+                          
+                        </div>
                       </div>
                 </div>
                 <div class="col-12 col-md-6">
@@ -247,10 +274,10 @@
                 <div class="col-12 col-md-6">
                     <p>@2023bike. All rights reserved.</p>
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 text-end d-flex flex-column align-items-end">
                     <h4>Get the App</h4>
-                    <img src="" alt="">
-                    <img src="" alt="">
+                    <img src="icons/Google Play Badge.png" class="w-25" alt="">
+                    <img src="icons/App Store Badge.png" class="w-25" alt="">
                 </div>
             </div>
         </div>

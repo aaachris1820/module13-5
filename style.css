@@ -30,13 +30,23 @@
 
 /* moment section style */
 
+.every-moment {
+    position: relative;
+}
+
+.toast {
+    display: block !important;
+    position: absolute;
+    top: 55%;
+    right: 0%;
+    border-left: 5px solid dodgerblue;
+}
 
 
 /* package style */
 
 .package {
-    margin-left: 14.22%;
-    margin-right: 14.22%;
+    
 }
 
 .package-header {
@@ -51,7 +61,7 @@
 
 .package-1 {
     position: relative;
-    box-shadow: ;
+    box-shadow: 0px 0px  15px 0px rgb(119, 119, 119);
     background-color:dodgerblue;
     color: white;
     transform: scale(1.1);
@@ -83,8 +93,8 @@
 /* responsive */
 @media screen and (max-width:576px) {
     
-    .carousel-item img{
-        
+    .img-carousel{
+        width: 500px;
         object-fit: cover;
     }
 
